@@ -135,6 +135,9 @@
         #about-me .my-socials i {
             font-size: 25px;
         }
+        .floating-img img {
+            display: none;
+        }
     }
     
     @media screen and (max-width:480px) {
@@ -154,6 +157,9 @@
         }
         #about-me .my-socials i {
             font-size: 25px;
+        }
+        .floating-img img {
+            display: none;
         }
     }
     
@@ -180,6 +186,9 @@
         }
         #about-me .my-socials i {
             font-size: 25px;
+        }
+        .floating-img img {
+            display: none;
         }
     }
     
