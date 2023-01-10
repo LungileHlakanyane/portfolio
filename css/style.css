@@ -8,6 +8,86 @@
         text-decoration: none;
         list-style: none;
     }
+    /* edu and certification section */
+    
+    .edu-containter {
+        width: 100%;
+        padding: 35px 10%;
+    }
+    
+    .edu-containter {
+        padding-right: calc(10% - 30px);
+    }
+    
+    main.edu-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    
+    .edu-col .edu-title {
+        color: #303ef7;
+        padding: 0px 0px 20px 30px;
+    }
+    
+    .edu-col .edu-contents {
+        padding: 0px 30px;
+        border-left: 2px solid #bababa;
+    }
+    
+    .edu-col .edu-contents .edu-box {
+        position: relative;
+        padding: 20px;
+        border: 1px solid #eaeaea;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 20px;
+    }
+    
+    .edu-col .edu-contents .edu-box:hover {
+        box-shadow: 0px 3px 12px 0px #ccc;
+        border: 1px solid transparent;
+    }
+    
+    .edu-col .edu-contents .edu-box::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        right: calc(100% + 22px);
+        top: 0;
+        background-color: #303ef7;
+        border: 2px solid white;
+    }
+    
+    .edu-box h4 {
+        position: relative;
+        color: #303ef7;
+    }
+    
+    .edu-box h3 {
+        font-size: 19px;
+        padding: 10px 0px 6px;
+        color: #444;
+    }
+    
+    .edu-box p {
+        line-height: 1.2;
+        color: #666;
+        font-size: 17px;
+    }
+    
+    @media(max-width: 768px) {
+        main.edu-row {
+            grid-template-columns: 1fr;
+        }
+        .edu-row .edu-col:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+    /* end edu and certification section */
     
     html {
         scroll-behavior: smooth;
@@ -18,42 +98,6 @@
     button {
         font-size: 16px;
         color: #fff;
-    }
-    /* Type writer effect */
-    
-    .line {
-        width: 16em;
-        font-weight: bold;
-        font-size: 180%;
-        white-space: nowrap;
-        overflow: hidden;
-        transform: translateY(-50%);
-        text-align: center;
-        margin: 0 auto;
-        border-right: 2px solid rgba(255, 255, 255, 0.75);
-    }
-    /* Animation */
-    
-    .anim-typewriter {
-        animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite;
-    }
-    
-    @keyframes typewriter {
-        from {
-            width: 0;
-        }
-        to {
-            width: 16em;
-        }
-    }
-    
-    @keyframes blinkTextCursor {
-        from {
-            border-right-color: rgba(255, 255, 255, 0.75);
-        }
-        to {
-            border-right-color: transparent;
-        }
     }
     /* about-me section */
     
@@ -115,97 +159,6 @@
     .my-socials ul li i {
         font-size: 33px;
     }
-    /* about-me responsive */
-    
-    @media screen and (max-width:375px) {
-        #about-me .intro-welcome-text {
-            font-size: 42px;
-        }
-        #about-me h3 {
-            font-size: 15px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 12px;
-            width: 80%;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        .floating-img img {
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width:480px) {
-        #about-me .intro-welcome-text {
-            font-size: 42px;
-        }
-        #about-me h3 {
-            font-size: 15px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 12px;
-            width: 80%;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        .floating-img img {
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width:600px) {
-        #about-me .intro-welcome-text {
-            font-size: 52px;
-        }
-        #about-me h3 {
-            font-size: 20px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 14px;
-            width: 80%;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        .floating-img img {
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width:768px) {
-        #about-me .intro-welcome-text {
-            font-size: 62px;
-        }
-        #about-me h3 {
-            font-size: 20px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 14px;
-            width: 60%;
-        }
-    }
-    /* end about-me responsive */
     /* end about-me section */
     /* know me button */
     
@@ -913,7 +866,98 @@
     #header__close {
         display: none;
     }
-    /* RESPONSIVE-NESS */
+    /* Responsive design */
+    /* about-me responsive */
+    
+    @media screen and (max-width:375px) {
+        #about-me .intro-welcome-text {
+            font-size: 42px;
+        }
+        #about-me h3 {
+            font-size: 15px;
+            font-weight: 200;
+        }
+        #about-me .sub-intro-text {
+            font-size: 12px;
+            width: 80%;
+        }
+        #about-me .btn {
+            margin-bottom: 20px;
+        }
+        #about-me .my-socials i {
+            font-size: 25px;
+        }
+        .floating-img img {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        #about-me .intro-welcome-text {
+            font-size: 42px;
+        }
+        #about-me h3 {
+            font-size: 15px;
+            font-weight: 200;
+        }
+        #about-me .sub-intro-text {
+            font-size: 12px;
+            width: 80%;
+        }
+        #about-me .btn {
+            margin-bottom: 20px;
+        }
+        #about-me .my-socials i {
+            font-size: 25px;
+        }
+        .floating-img img {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        #about-me .intro-welcome-text {
+            font-size: 52px;
+        }
+        #about-me h3 {
+            font-size: 20px;
+            font-weight: 200;
+        }
+        #about-me .sub-intro-text {
+            font-size: 14px;
+            width: 80%;
+        }
+        #about-me .btn {
+            margin-bottom: 20px;
+        }
+        #about-me .my-socials i {
+            font-size: 25px;
+        }
+        #about-me .btn {
+            margin-bottom: 20px;
+        }
+        #about-me .my-socials i {
+            font-size: 25px;
+        }
+        .floating-img img {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        #about-me .intro-welcome-text {
+            font-size: 62px;
+        }
+        #about-me h3 {
+            font-size: 20px;
+            font-weight: 200;
+        }
+        #about-me .sub-intro-text {
+            font-size: 14px;
+            width: 60%;
+        }
+    }
+    /* end about-me responsive */
     
     @media screen and (max-width:1024px) {
         .title h1 {
@@ -1259,4 +1303,4 @@
             font-size: 12px;
         }
     }
-    /* END RESPONSIVENESS */
+    /* End Responsive Design */
