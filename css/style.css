@@ -1,1306 +1,383 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none;
-        list-style: none;
-    }
-    /* edu and certification section */
-    
-    .edu-containter {
-        width: 100%;
-        padding: 35px 10%;
-    }
-    
-    .edu-containter {
-        padding-right: calc(10% - 30px);
-    }
-    
-    main.edu-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 20px;
-    }
-    
-    .edu-col .edu-title {
-        color: #303ef7;
-        padding: 0px 0px 20px 30px;
-    }
-    
-    .edu-col .edu-contents {
-        padding: 0px 30px;
-        border-left: 2px solid #bababa;
-    }
-    
-    .edu-col .edu-contents .edu-box {
-        position: relative;
-        padding: 20px;
-        border: 1px solid #eaeaea;
-        background-color: #fff;
-        cursor: pointer;
-        transition: all 0.4s;
-        margin-bottom: 20px;
-    }
-    
-    .edu-col .edu-contents .edu-box:hover {
-        box-shadow: 0px 3px 12px 0px #ccc;
-        border: 1px solid transparent;
-    }
-    
-    .edu-col .edu-contents .edu-box::before {
-        content: '';
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        right: calc(100% + 22px);
-        top: 0;
-        background-color: #303ef7;
-        border: 2px solid white;
-    }
-    
-    .edu-box h4 {
-        position: relative;
-        color: #303ef7;
-    }
-    
-    .edu-box h3 {
-        font-size: 19px;
-        padding: 10px 0px 6px;
-        color: #444;
-    }
-    
-    .edu-box p {
-        line-height: 1.2;
-        color: #666;
-        font-size: 17px;
-    }
-    
-    @media(max-width: 768px) {
-        main.edu-row {
-            grid-template-columns: 1fr;
-        }
-        .edu-row .edu-col:nth-child(2) {
-            margin-top: 30px;
-        }
-    }
-    /* end edu and certification section */
-    
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    li,
-    a,
-    button {
-        font-size: 16px;
-        color: #fff;
-    }
-    /* about-me section */
-    
-    #about-me {
-        padding-top: 192px;
-        display: flex;
-        width: 100%;
-        height: auto;
-        background-color: #814096;
-    }
-    
-    #about-me .intro-welcome-text {
-        font-size: 54px;
-        font-weight: bold;
-        color: #fff;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        padding-left: 30px;
-    }
-    
-    #about-me p {
-        font-weight: 300;
-        color: red;
-    }
-    
-    #about-me h3 {
-        font-size: 34px;
-        font-weight: bold;
-        color: #fff;
-        padding-bottom: 5px;
-        padding-left: 30px;
-    }
-    
-    #about-me .sub-intro-text {
-        color: #fff;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        padding-left: 30px;
-        width: 50%;
-    }
-    
-    .my-socials {
-        display: flex;
-        padding-top: 30px;
-        padding-left: 30px;
-    }
-    
-    .my-socials ul {
-        display: flex;
-        float: left;
-        justify-content: center;
-    }
-    
-    .my-socials ul li {
-        justify-content: space-between;
-        padding-right: 20px;
-    }
-    
-    .my-socials ul li i {
-        font-size: 33px;
-    }
-    /* end about-me section */
-    /* know me button */
-    
-    .button-to-know-me {
-        background-color: #303ef7;
-        border: none;
-        color: #fff;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-bottom: 45px;
-    }
-    
-    #typewriter {
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-size: 33px;
-    }
-    /* end know me button */
-    /* End type writer effect */
-    /* nav-bar */
-    
-    .container {
-        max-width: 1170px;
-        margin: auto;
-    }
-    
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .align-items-center {
-        align-items: center;
-    }
-    
-    .justify-content-between {
-        justify-content: space-between;
-    }
-    
-    .logo .logo-text {
-        font-size: 26px;
-    }
-    
-    header {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 30px 10px;
-        background-color: #24252A;
-        width: 100%;
-        height: 70px;
-        position: fixed;
-        z-index: 1;
-    }
-    
-    .typewriter {
-        font-size: 40px;
-        font-weight: bolder;
-    }
-    
-    .typewriter span {
-        color: #303ef7;
-    }
-    
-    .logo {
-        cursor: pointer;
-        margin-right: auto;
-        color: #fff;
-        font-size: 24px;
-        text-transform: uppercase;
-    }
-    
-    .nav__link {
-        cursor: pointer;
-    }
-    
-    .nav-links li {
-        display: inline-block;
-        padding: 0 20px;
-    }
-    
-    .nav-links li a {
-        transition: all 0.3s 0s;
-    }
-    
-    .nav-links li a:hover {
-        color: #303ef7;
-    }
-    
-    button {
-        margin-left: 20px;
-        padding: 9px;
-        background: #fff;
-        color: #000;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-    }
-    
-    button {
-        transition: ease-out 0.3s 0s;
-    }
-    
-    button:hover {
-        background: #303ef7;
-        color: #fff;
-    }
-    /* About */
-    
-    .about {
-        padding-top: 6%;
-        width: 100%;
-        min-height: 100vh;
-        background-color: #ddd;
-    }
-    
-    .container {
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 100px;
-    }
-    
-    .title h3 {
-        text-transform: uppercase;
-    }
-    
-    .content-section {
-        float: left;
-        width: 55%;
-        text-align: center;
-        justify-content: center;
-        position: relative;
-        left: 24%;
-    }
-    
-    .img-section {
-        float: right;
-        width: 30%;
-        height: 30%;
-    }
-    
-    .img-section img {
-        width: 100%;
-        height: auto;
-        border-radius: 10%;
-    }
-    
-    .cv-download-btn {
-        padding-top: 15px;
-        padding-bottom: 20px;
-        position: relative;
-        right: 24px;
-    }
-    /* ANIMATING THE IMAGE */
-    
-    .img-section img {
-        animation: animate 4s linear infinite;
-    }
-    
-    @keyframes animate {
-        0% {
-            transform: translate(-11px, 0);
-        }
-        50% {
-            transform: translate(0, -11px);
-        }
-        100% {
-            transform: translate(-11px, 0);
-        }
-    }
-    /* END ANIMATI9NG THE IMAGE */
-    
-    .button {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .button a {
-        margin-top: 10px;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 200;
-        border: #fff 2px solid;
-        background-color: #000;
-        border-radius: 10px;
-    }
-    
-    .social a i {
-        color: #000;
-        font-size: 30px;
-        margin: 2px 9px 0 0;
-    }
-    
-    .text {
-        font-weight: bolder;
-        font-size: 32px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    /* Services */
-    /* End Services */
-    /* Skills */
-    
-    .skills_section {
-        width: 100%;
-        height: 100vh;
-        padding: 0px 13%;
-        background-color: rgba(0, 0, 0, 0.082);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .skills_head {
-        width: 100%;
-        margin-bottom: 100px;
-        display: grid;
-        place-items: center;
-        text-align: center;
-    }
-    
-    .skills_head h2 {
-        font-size: 30px;
-        margin-bottom: -5px;
-    }
-    
-    .skills_main {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 30px;
-        grid-column-gap: 50px;
-    }
-    
-    .skills_main .skill_bar .info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
-    
-    .skill_bar .info p:nth-child(2) {
-        font-weight: 500;
-    }
-    
-    .skill_bar .bar {
-        width: 100%;
-        height: 10px;
-        background-color: rgba(0, 0, 0, 0.144);
-        border-radius: 25px;
-        margin-top: 5px;
-        position: relative;
-    }
-    
-    .skill_bar .bar span {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        background-color: #303ef7;
-        border-radius: 25px;
-    }
-    
-    .skill_bar .bar .html {
-        width: 90%;
-        animation: html 2s;
-    }
-    
-    @keyframes html {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 90%;
-        }
-    }
-    
-    .skill_bar .bar .css {
-        width: 85%;
-        animation: css 2s;
-    }
-    
-    @keyframes css {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 85%;
-        }
-    }
-    
-    .skill_bar .bar .sass {
-        width: 80%;
-        animation: sass 2s;
-    }
-    
-    @keyframes sass {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 80%;
-        }
-    }
-    
-    .skill_bar .bar .js {
-        width: 17%;
-        animation: css 2s;
-    }
-    
-    @keyframes js {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 80%;
-        }
-    }
-    
-    .skill_bar .bar .react {
-        width: 75%;
-        animation: react 2s;
-    }
-    
-    @keyframes react {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 75%;
-        }
-    }
-    
-    .skill_bar .bar .node {
-        width: 70%;
-        animation: node 2s;
-    }
-    
-    @keyframes node {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 70%;
-        }
-    }
-    
-    .skill_bar .bar .express {
-        width: 65%;
-        animation: express 2s;
-    }
-    
-    @keyframes express {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 65%;
-        }
-    }
-    
-    .skill_bar .bar .mongo {
-        width: 60%;
-        animation: mongo 2s;
-    }
-    
-    @keyframes mongo {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 60%;
-        }
-    }
-    /* End skills */
-    
-    .cert-heading,
-    .cert-sub-heading {
-        text-align: center;
-    }
-    
-    .shop-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 5rem;
-    }
-    
-    .shop-container .box {
-        flex: 1 1 10rem;
-        padding: 10px;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3rem;
-        border-radius: 0.5rem;
-    }
-    
-    .shop-container .box .box-img {
-        width: 150px;
-        height: 150px;
-        margin-top: -100px
-    }
-    
-    .shop-container .box .box-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-    }
-    
-    .stars {
-        margin: 1rem 0 0 0.1rem;
-    }
-    
-    .shop-container .box .stars .bx {
-        color: #ebdbc8;
-    }
-    
-    .shop-container .box h2 {
-        color: #ebdbc8;
-        font-size: 1.2rem;
-    }
-    
-    .shop-container .box span {
-        color: #ebdbc8;
-        font-size: 1.4rem;
-        font-weight: 500;
-        margin: 0.2rem 0 0.5rem;
-    }
-    
-    .box .btn {
-        border: 2px solid #ebdbc8;
-        color: #ebdbc8;
-    }
-    
-    .box .btn:hover {
-        background: #ebdbc8;
-        color: var(--second-color);
-    }
-    /* Footer */
-    
-    #footer {
-        margin-top: 40px;
-    }
-    
-    footer {
-        background-color: #111;
-        height: auto;
-        width: 100vw;
-        color: #fff;
-        padding-top: 40px;
-    }
-    
-    .footer-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .footer-content h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
-    }
-    
-    .footer-content p {
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
-    }
-    
-    .socials {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0 3rem 0;
-    }
-    
-    .socials li {
-        margin: 0 10px;
-    }
-    
-    .socials a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .socials a i {
-        font-size: 1.1rem;
-        transition: color 0.4s ease;
-    }
-    
-    .socials a:hover i {
-        color: #303ef7;
-    }
-    /* Contact */
-    
-    #contact {
-        text-align: center;
-        justify-content: center;
-        padding-top: 70px;
-        width: 100%;
-        background-color: #ddd;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    form {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        padding: 2vw 4vw;
-        width: 90%;
-        max-width: 600px;
-        border-radius: 10px;
-    }
-    
-    form .section__title {
-        padding-bottom: 25px;
-    }
-    
-    form input,
-    form textarea {
-        border: 0;
-        margin: 10px 0;
-        padding: 20px;
-        outline: none;
-        background: #f5f5f5;
-        font-size: 16px;
-    }
-    /* End Contact */
-    /* Footer */
-    
-    .footer-bottom {
-        background: #000;
-        width: 100vw;
-        padding: 20px 0;
-        text-align: center;
-    }
-    
-    .footer-bottom p {
-        font-size: 14px;
-        word-spacing: 2px;
-        text-transform: capitalize;
-    }
-    
-    .footer-bottom span {
-        text-transform: uppercase;
-        opacity: 0.4;
-    }
-    /* End Footer */
-    
-    #preloader {
-        background: #fff url(../images/Bounce-Bar-Preloader-1.gif) no-repeat center center;
-        height: 100vh;
-        background-size: 65%;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-    }
-    /* Projects */
-    
-    .projects__grid {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-        grid-gap: 2em;
-    }
-    
-    .project {
-        padding: 2em;
-        margin: 0 auto;
-        text-align: center;
-        box-shadow: 5px 5px 5px 5px #888888;
-        transition: transform 0.2s linear;
-        margin-bottom: 50px;
-    }
-    
-    .project:hover {
-        transform: translateY(-7px);
-    }
-    
-    .project__description {
-        margin-top: 1em;
-    }
-    
-    .project__stack {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 1.2em 0;
-    }
-    
-    .project__stack-item {
-        margin: 0.5em;
-        font-weight: 500;
-        font-size: 0.8rem;
-        color: var(--clr-fg-alt);
-    }
-    
-    .project .link--icon {
-        margin-left: 0.5em;
-    }
-    
-    .heading-title {
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
-    /* End Projects */
-    /* Service*/
-    
-    .container-service {
-        width: 100%;
-        height: 100vh;
-        padding: 0 8%;
-    }
-    
-    .container-service h1 {
-        text-align: center;
-        padding-top: 10%;
-        font-weight: 600;
-        position: relative;
-    }
-    
-    .container-service p {
-        text-align: center;
-        padding-bottom: 8%;
-        font-weight: 700;
-    }
-    
-    .row-service {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        grid: 50px;
-    }
-    
-    .service {
-        text-align: center;
-        padding: 25px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        background: transparent;
-        transition: transform 0.5s, background 0.5s;
-    }
-    
-    .row-service i {
-        font-size: 40px;
-        margin-bottom: 10px;
-        color: #303ef7;
-    }
-    
-    .row-service h2 {
-        font-weight: 600;
-        margin-bottom: 8px;
-    }
-    
-    .service:hover {
-        background: #303ef7;
-        color: #fff;
-        transform: scale(1.05);
-    }
-    
-    .service:hover i {
-        color: #fff;
-    }
-    /* End service */
-    /* NAV-BAR RESPONSIVENESS */
-    
-    .nav__list {
-        display: flex;
-        align-items: center;
-    }
-    
-    .nav__item {
-        margin: 0 8px;
-    }
-    
-    .nav__item {
-        color: #fff;
-        font-size: 0.9rem;
-        padding: 10px;
-        font-weight: 500;
-        border-radius: 7px;
-    }
-    
-    .nav__item:hover {
-        background-color: #303ef7;
-    }
-    
-    #header__toggle,
-    #header__close {
-        display: none;
-    }
-    /* Responsive design */
-    /* about-me responsive */
-    
-    @media screen and (max-width:375px) {
-        #about-me .intro-welcome-text {
-            font-size: 42px;
-        }
-        #about-me h3 {
-            font-size: 15px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 12px;
-            width: 80%;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        .floating-img img {
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width:480px) {
-        #about-me .intro-welcome-text {
-            font-size: 42px;
-        }
-        #about-me h3 {
-            font-size: 15px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 12px;
-            width: 80%;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        .floating-img img {
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width:600px) {
-        #about-me .intro-welcome-text {
-            font-size: 52px;
-        }
-        #about-me h3 {
-            font-size: 20px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 14px;
-            width: 80%;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        #about-me .btn {
-            margin-bottom: 20px;
-        }
-        #about-me .my-socials i {
-            font-size: 25px;
-        }
-        .floating-img img {
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width:768px) {
-        #about-me .intro-welcome-text {
-            font-size: 62px;
-        }
-        #about-me h3 {
-            font-size: 20px;
-            font-weight: 200;
-        }
-        #about-me .sub-intro-text {
-            font-size: 14px;
-            width: 60%;
-        }
-    }
-    /* end about-me responsive */
-    
-    @media screen and (max-width:1024px) {
-        .title h1 {
-            font-size: 32px;
-            position: relative;
-            bottom: 35px;
-        }
-        .content h3 {
-            position: relative;
-            bottom: 45px;
-            font-size: 29px;
-        }
-        .content p {
-            position: relative;
-            bottom: 30px;
-        }
-    }
-    
-    @media screen and (max-width:768px) {
-        header {
-            height: 48px;
-            justify-content: space-between;
-            padding: 0 28px;
-        }
-        .logo a {
-            font-size: 0.9rem;
-        }
-        .logo img {
-            width: 30px;
-        }
-        #header__toggle {
-            display: inline;
-            color: #fff;
-            font-size: 24px;
-        }
-        #header__close {
-            position: absolute;
-            right: 24px;
-            display: block;
-            font-size: 24px;
-            border-radius: 50%;
-        }
-        #header__close:hover {
-            background-color: #303ef7;
-        }
-        .nav {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            background-color: #222831;
-            color: #eee;
-            width: 60%;
-            height: 100vh;
-            height: 100vh;
-            padding: 24px 0;
-            z-index: 100;
-            transition: 0.5s;
-            border-radius: 0 0 0 50%;
-        }
-        .nav__list {
-            display: flex;
-            flex-direction: column;
-        }
-        .nav__item {
-            margin: 2rem 0;
-        }
-        .show {
-            right: 0;
-        }
-        .title h1 {
-            font-size: 35px;
-            position: relative;
-            bottom: 55px;
-            padding-bottom: 35px;
-        }
-        .content .main .text {
-            position: relative;
-            bottom: 50px;
-        }
-        .content p {
-            position: relative;
-            bottom: 55px;
-        }
-        .cv-download-btn {
-            position: relative;
-            bottom: 45px;
-        }
-        .social {
-            position: relative;
-            bottom: 45px;
-            height: 35px;
-        }
-        .social a i {
-            font-size: 22px;
-        }
-    }
-    
-    @media screen and (max-width:360px) {
-        .logo {
-            font-size: 13px;
-        }
-        .title h1 {
-            font-size: 16px;
-        }
-        .text h3 {
-            font-size: 12px;
-            position: relative;
-            bottom: 52px;
-        }
-        .content p {
-            font-size: 8px;
-            font-weight: bold;
-            position: relative;
-            bottom: 62px;
-        }
-        .cv-download-btn {
-            width: 2%;
-            height: 4%;
-            font-size: 12px;
-        }
-        .cv-download-btn button {
-            font-size: 15px;
-            font-weight: bold;
-            width: 129px;
-        }
-        .service i {
-            font-size: 25px;
-        }
-        .service h2 {
-            font-size: 16px;
-        }
-        .service p {
-            font-size: 11px;
-        }
-        .skills_main .skill_bar .info p {
-            font-size: 7px;
-            font-weight: bold;
-        }
-    }
-    
-    @media screen and (max-width:280px) {
-        .logo {
-            font-size: 13px;
-        }
-        .title h1 {
-            font-size: 16px;
-        }
-        .text h3 {
-            font-size: 12px;
-            position: relative;
-            bottom: 52px;
-        }
-        .content p {
-            font-size: 8px;
-            font-weight: bold;
-            position: relative;
-            bottom: 62px;
-        }
-        .cv-download-btn {
-            width: 2%;
-            height: 4%;
-            font-size: 12px;
-        }
-        .cv-download-btn button {
-            font-size: 15px;
-            font-weight: bold;
-            width: 129px;
-        }
-        .service i {
-            font-size: 25px;
-        }
-        .service h2 {
-            font-size: 16px;
-        }
-        .service p {
-            font-size: 11px;
-        }
-        .skills_main .skill_bar .info p {
-            font-size: 7px;
-            font-weight: bold;
-        }
-    }
-    
-    @media screen and (max-width:380px) {
-        .logo {
-            font-size: 10px;
-        }
-        .title h1 {
-            font-size: 16px;
-        }
-        .text h3 {
-            font-size: 12px;
-            position: relative;
-            bottom: 52px;
-        }
-        .content p {
-            font-size: 12px;
-            position: relative;
-            bottom: 62px;
-        }
-        .cv-download-btn {
-            width: 2%;
-            height: 4%;
-            font-size: 12px;
-        }
-        .cv-download-btn button {
-            font-size: 15px;
-            font-weight: bold;
-            width: 129px;
-        }
-        .service i {
-            font-size: 25px;
-        }
-        .service h2 {
-            font-size: 16px;
-        }
-        .service p {
-            font-size: 11px;
-        }
-        .skills_main .skill_bar .info p {
-            font-size: 7px;
-            font-weight: bold;
-        }
-    }
-    
-    @media screen and (max-width:412px) {
-        .skills_main .skill_bar .info p {
-            font-size: 10px;
-            font-weight: bold;
-        }
-        .cv-download-btn {
-            width: 2%;
-            height: 4%;
-            font-size: 12px;
-        }
-        .cv-download-btn button {
-            font-size: 15px;
-            font-weight: bold;
-            width: 129px;
-        }
-        .service i {
-            font-size: 25px;
-        }
-        .service h2 {
-            font-size: 16px;
-        }
-        .service p {
-            font-size: 11px;
-        }
-        .skills_main .skill_bar .info p {
-            font-size: 7px;
-            font-weight: bold;
-        }
-    }
-    
-    @media screen and (max-width:505px) {
-        .social {
-            position: relative;
-            bottom: 69px;
-        }
-        .container-service {
-            position: relative;
-            top: 20px;
-        }
-        .container-service h1 {
-            font-size: 20px;
-            text-align: center;
-            justify-content: center;
-        }
-    }
-    
-    @media screen and (max-width:650px) {
-        .content-section h1 {
-            font-size: 25px;
-        }
-        .content h3 {
-            font-size: 20px;
-        }
-        .content p {
-            position: relative;
-            bottom: 90px;
-        }
-        .cv-download-btn {
-            position: relative;
-            bottom: 75px;
-        }
-        .social {
-            position: relative;
-            bottom: 55px
-        }
-        #services {
-            height: 780px;
-            position: relative;
-            bottom: 50px;
-        }
-        .service i {
-            font-size: 30px;
-        }
-        .service h2 {
-            font-size: 15px;
-        }
-        .service p {
-            font-size: 15px;
-        }
-    }
-    
-    @media screen and (max-width:276px) {
-        .title h1 {
-            font-size: 20px;
-        }
-        .social {
-            position: relative;
-            bottom: 80px;
-        }
-        .container-service {
-            text-align: center;
-            justify-content: center;
-            position: relative;
-            top: 55px;
-        }
-        .container-service h1 {
-            font-size: 17px;
-        }
-        .container-service p {
-            font-size: 13px;
-        }
-        .service i {
-            font-size: 25px;
-        }
-        header .logo {
-            font-size: 15px;
-        }
-        .text h3 {
-            font-size: 14px;
-            padding-top: 25px;
-            padding-bottom: 10px;
-        }
-        .footer-content h3 {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .footer-bottom p {
-            font-size: 12px;
-        }
-    }
-    /* End Responsive Design */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d9fe49d963.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lungile-hlakanyane-portfolio</title>
+</head>
+
+<body>
+    <!-- Pre-loader -->
+    <div id="preloader">
+    </div>
+    <!-- End Pre-loader -->
+    <!-- Navigation bar -->
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Lungile Hlakanyane</h1>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <i class="fa-solid fa-xmark" id="header__close"></i>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a> </li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="header__toggle"></i>
+    </header>
+    <!-- Navigation bar -->
+    <!-- About -->
+    <section id="about-me">
+        <div class="short-brief-of-me">
+            <h1 class="intro-welcome-text">Welcome</h1>
+            <h3>I am Lungile Hlakanyane</h3>
+            <p class="sub-intro-text">
+                I am eager to apply my skills and knowledge to new challenges and am open to learning and growing as a developer.
+            </p>
+            <button class="btn"><a href="pdf/Lungile-Hlakanyane-Resume.pdf" style="color:#000">Download Resume</a></button>
+            <button class="btn" id="#contact"><a href="#contact" style="color:#000">Hire Me</a></button>
+            <div class="my-socials">
+                <ul>
+                    <li><a href="https://github.com/LungileHlakanyane"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="floating-img">
+            <img src="images/hero-image.png">
+        </div>
+    </section>
+    <!-- End-About -->
+    <!-- Services -->
+    <section id="services">
+        <div class="container-service">
+            <h1>Services</h1>
+            <div class="border"></div>
+            <div class="row-service">
+                <div class="service">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Web Development</h2>
+                    <p>HTML, CSS & Javascript </p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>Web Design</h2>
+                    <p>Adobe Photoshop CC</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Development</h2>
+                    <p>Dart & Flutter (android/iOS)</p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Application</h2>
+                    <p>ASP.NET MVC 5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+    <!-- skills -->
+    <section id="skills">
+        <div class="skills_section">
+            <div class="skills_head">
+                <h2>My <span>Skills</span></h2>
+                <div class="border"></div>
+            </div>
+            <div class="skills_main">
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>90%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>85%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>C#</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="sass"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <P>20%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>ASP.Net</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="react"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>SQL</p>
+                        <P>70%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="node"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>Dart</p>
+                        <P>65%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="express"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>Flutter</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="mongo"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-- End skills section -->
+    <!-- Education section -->
+    <section id="education-section">
+        <div class="edu-containter">
+            <main class="edu-row">
+                <!-- Education section -->
+                <section class="edu-col">
+                    <header class="edu-main-title">
+                    </header>
+                    <div class="edu-contents">
+                        <div class="edu-box">
+                            <h2 class="edu-title">EDUCATION</h2>
+                            <h4>2019- 2022</h4>
+                            <h3>Central University of Technology</h3>
+                            <p>Diploma in Information Technology, Major in Software Development</p>
+                        </div>
+                        <div class="edu-box">
+                            <h4>2016 - 2018</h4>
+                            <h3>Kagisho Comprehensive School</h3>
+                            <p>Science subjects curriculum, <i>maths,physics...etc</i></p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Education section ends -->
+                <!-- Certificates Section -->
+                <section class="edu-col">
+                    <div class="edu-contents">
+                        <div class="edu-box">
+                            <h2 class="edu-title">CERTIFICATES</h2>
+                            <h4>Course Completed on 26 Aug 2022 (1hour:25min)</h4>
+                            <h3>Linkedin Learning</h3>
+                            <p>Programming Foundations: Databases</p>
+                            <p>Fundamentals of SQL and SQL Server Management Studio 2018</p>
+                            <br>
+                            <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin" style="color:darkblue"></i></a></li>
+                        </div>
+                        <div class="edu-box">
+                            <h4>Course Completed on 22 Aug 2022 (2hour:14min)</h4>
+                            <h3>Linkedin Learning</h3>
+                            <p>Programming Foundations: Fundamentals</p>
+                            <p>Fundamentals of the python programming language</p>
+                            <br>
+                            <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin" style="color:darkblue"></i></a></li>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- Certificates section ends -->
+            </main>
+        </div>
+    </section>
+
+    <!-- End Education section -->
+    <!-- Projects -->
+    <section id="projects">
+        <!-- <section class="section projects"> -->
+        <div class="heading-title">
+            <h1 class="cert-heading">Projects</h1>
+            <div class="border"></div>
+        </div>
+        <div class="projects__grid">
+            <div class="project">
+                <h3><a href="" style="color:#000;">Smart Student</a></h3>
+                <p class="project__description">
+                    An information hub web application which provides students with services they might need during emergency.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">HTML</li>
+                    <li class="project__stack-item">CSS</li>
+                    <li class="project__stack-item">C#</li>
+                    <li class="project__stack-item">ASP.NET MVC</li>
+                    <li class="project__stack-item">SQL & SQL Server Management Studio 18</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1LmcfmxWAMqweT3keTf67YBRzWb0BBpXi/view?usp=share_link" aria-label="source code" class="link link--icon">
+                    <i aria-hidden="true" class="fab fa-github" style="color:#000"></i>
+                </a>
+            </div>
+            <div class="project">
+                <h3>Calculator App</h3>
+                <p class="project__description">
+                    A simple calculator app with the basic mathematical operators. This calculator app has a feature of light mode & dark mode.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">HTML</li>
+                    <li class="project__stack-item">CSS</li>
+                    <li class="project__stack-item">Javascript</li>
+                </ul>
+                <a href="https://github.com/LungileHlakanyane/Calculator-App" aria-label="source code" class="link link--icon">
+                    <i aria-hidden="true" class="fab fa-github" style="color:#000"></i>
+                </a>
+            </div>
+            <div class="project">
+                <h3>Todo-List App</h3>
+                <p class="project__description">
+                    A Todo List App with very basic features, add, edit and delete a todo. This applications uses the local storage to store all the created todo's
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">HTML</li>
+                    <li class="project__stack-item">CSS</li>
+                    <li class="project__stack-item">Javascript</li>
+                </ul>
+                <a href="https://github.com/LungileHlakanyane/todo-list-app" aria-label="source code" class="link link--icon">
+                    <i aria-hidden="true" class="fab fa-github" style="color:#000;"></i>
+                </a>
+            </div>
+        </div>
+        <!-- </section> -->
+    </section>
+    <!-- End Projects -->
+
+    <!-- Testimonial Section -->
+    <section id="testimonials">
+        <div class="testimonials">
+            <div class="testi-heading">
+                <h1>Testimonials</h1>
+            </div>
+            <div class="bottom-border"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <div class="inner">
+                            <img src="images/picture.png">
+                            <h4 class="name">Vuyelwa</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p>It's very nice.... it seems like there's alot of work done.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <div class="inner">
+                            <img src="images/picture.png">
+                            <h4 class="name">Lufezo</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p>It looks good mate...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <div class="inner">
+                            <img src="images/picture.png">
+                            <h4 class="name">Kgotso</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p>It's official I personal think you're a web developer in the making...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Section -->
+
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+        <form action="https://formspree.io/f/mbjerjyw" method="POST">
+            <h2 class="section__title">Contact Me</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="email" placeholder="Your Email" required>
+            <textarea name="Your Message" id="message" rows="4"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <footer>
+            <div class="footer-content">
+                <h3>Lungile Hlakanyane</h3>
+                <p>Creative designer and a developer.</p>
+                <ul class="socials">
+                    <li><a href="https://github.com/LungileHlakanyane"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>copyright &copy; LUNGILE-HLAKANYANE. designed and developed by <span>Lungile Hlakanyane</span></p>
+            </div>
+        </footer>
+    </section>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>
