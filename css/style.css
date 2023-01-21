@@ -10,6 +10,10 @@
     }
     /* Testimonial styling */
     
+    a {
+        cursor: pointer;
+    }
+    
     .testimonials {
         padding: 40px 0;
         background: #f1f1f1;
@@ -856,6 +860,10 @@
     }
     /* End Projects */
     /* Service*/
+    /* #services {
+        padding-top: 0px;
+    }
+     */
     
     .container-service {
         width: 100%;
@@ -877,7 +885,7 @@
     }
     
     .row-service {
-        padding-top:110px;
+        padding-top: 90px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid: 50px;
@@ -1379,3 +1387,4 @@
         }
     }
     /* End Responsive Design */
+   
