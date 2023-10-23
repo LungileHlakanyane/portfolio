@@ -1478,4 +1478,21 @@
         cursor: pointer;
     }
 
+    .sub-intro-text{
+        font-style: italic;
+    }
+
+
+    .sub-intro-text .make-bold
+    {
+        font-weight: bold;
+        color: rgb(255, 255, 0);
+    }
+
+    .sub-intro-text .star{
+        padding-left: 5px;
+        color: rgb(255, 255, 0);
+    }
+
+
     /* End new styles */
