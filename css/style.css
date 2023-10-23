@@ -615,6 +615,77 @@
             width: 60%;
         }
     }
+
+    /* Recenctly new added skills */
+
+    .skill_bar .bar .java{
+        width:65%;
+        animation: java 2s;
+    }
+
+
+    @keyframes java{
+         0%{
+            width:0%;
+         }
+         100%{
+            width:65%;
+         }
+    }
+
+    .skill_bar .bar .spring-boot{
+        width:65%;
+        animation: java 2s;
+    }
+
+
+    @keyframes spring-boot{
+         0%{
+            width:0%;
+         }
+         100%{
+            width:65%;
+         }
+    }
+
+    .skill_bar .bar .typscript{
+        width:60%;
+        animation: typscript 2s;
+    }
+
+
+    @keyframes typscript{
+         0%{
+            width:0%;
+         }
+         100%{
+            width:65%;
+         }
+    }
+
+    .skill_bar .bar .angular{
+        width:70%;
+        animation: typscript 2s;
+    }
+
+
+    @keyframes angular{
+         0%{
+            width:0%;
+         }
+         100%{
+            width:65%;
+         }
+    }
+
+
+
+    
+
+      /* End Recenctly new added skills */
+
+
+
     /* End skills */
     
     .cert-heading,
