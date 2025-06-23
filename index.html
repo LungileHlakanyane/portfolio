@@ -2,533 +2,121 @@
 <html lang="en">
 
 <head>
-    <script src="https://kit.fontawesome.com/d9fe49d963.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lungile-hlakanyane-portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lungile Hlakanyane | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <!-- Pre-loader -->
-    <div id="preloader">
+  <header>
+    <div class="logo-text">Lungile Hlakanyane</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Lungile</h1>
+      <p>Full-Stack Software Developer</p>
+      <a href="#contact" class="btn">Hire Me</a>
+      <a href="pdf/Lungile_Vincent_Hlakanyane_Resume II(latest).pdf" class="btn">Download CV</a>
     </div>
-    <!-- End Pre-loader -->
-    <!-- Navigation bar -->
-    <header>
-        <div class="logo">
-            <h1 class="logo-text">Lungile Hlakanyane</h1>
-        </div>
-        <nav class="nav" id="nav-menu">
-            <i class="fa-solid fa-xmark" id="header__close"></i>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a> </li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </li>
-            </ul>
-        </nav>
-        <i class="fa-solid fa-bars" id="header__toggle"></i>
-    </header>
-    <!-- Navigation bar -->
-    <!-- About -->
-    <section id="about-me">
-        <div class="short-brief-of-me">
-            
-            <h1 class="intro-welcome-text">Welcome</h1>
+    <div class="hero-img">
+      <img src="images/hero-image.png" alt="hero image">
+    </div>
+  </section>
 
-            <div class="typing-container">
-                <h3 class="typing-text"></h3>
-            </div>
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, TypeScript, Angular</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>Figma, Wireframing, Responsive Design</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>App Development</h3>
+        <p>Ionic Framework & Angular</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-database"></i>
+        <h3>Backend</h3>
+        <p>Java, Spring Boot, SQL</p>
+      </div>
+    </div>
+  </section>
 
-            <p class="sub-intro-text">
-                A Full-stack software developer
-            </p>
-            <button class="btn"><a href="pdf/Lungile_Vincent_Hlakanyane_Resume II(latest).pdf" style="color:#000">Download Resume</a></button>
-            <button class="btn" id="#contact"><a href="#contact" style="color:#000">Hire Me</a></button>
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><i class="fab fa-html5"></i><p>HTML - 90%</p></div>
+      <div class="skill"><i class="fab fa-css3-alt"></i><p>CSS - 85%</p></div>
+      <div class="skill"><i class="fab fa-js"></i><p>JavaScript - 80%</p></div>
+      <div class="skill"><i class="fab fa-angular"></i><p>Angular - 80%</p></div>
+      <div class="skill"><i class="fab fa-java"></i><p>Java - 80%</p></div>
+      <div class="skill"><i class="fas fa-server"></i><p>Spring Boot - 80%</p></div>
+    </div>
+  </section>
 
-            <!-- Adding emojis -->
-            <div class="my-socials">
-                <p style="font-size:48px">
-                    &#128525; &#128151;
-                </p>
-            </div>
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>MoneyMate</h3>
+        <p>Finance tracking app with budgeting features</p>
+        <p><strong>Stack:</strong> Ionic, Angular, Spring Boot</p>
+        <a href="https://github.com/Lungile-Hlakanyane/Front-End-MoneyMate" class="btn">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Smart Student</h3>
+        <p>Emergency student info hub</p>
+        <p><strong>Stack:</strong> ASP.NET, C#, SQL</p>
+        <a href="https://drive.google.com/file/d/1LmcfmxWAMqweT3keTf67YBRzWb0BBpXi/view?usp=share_link" class="btn">Demo</a>
+      </div>
+      <div class="project">
+        <h3>Calculator App</h3>
+        <p>Basic calculator with light/dark mode</p>
+        <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/LungileHlakanyane/Calculator-App" class="btn">GitHub</a>
+      </div>
+    </div>
+  </section>
 
-        </div>
-        <div class="floating-img">
-            <img src="images/hero-image.png">
-        </div>
-    </section>
-    <!-- End-About -->
-    <!-- Services -->
-    <section id="services">
-        <div class="container-service">
-            <h1>Services</h1>
-            <div class="row-service">
-                <div class="service">
-                    <i class="fa-solid fa-laptop"></i>
-                    <h2>Web Development</h2>
-                    <p>HTML, CSS, JavaScript, TypScript, Angular</p>
-                </div>
-                <div class="service">
-                    <i class="fa-solid fa-pencil"></i>
-                    <h2>Web Design</h2>
-                    <p>Figma</p>
-                </div>
-                <div class="service">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h2>App Development</h2>
-                    <p>Ionic Framework</p>
-                </div>
-                <div class="service">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Web Application</h2>
-                    <p>Java (Spring Boot Framework)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Services -->
-    <!-- skills -->
-    <section id="skills">
-        <div class="skills_section">
-            <div class="skills_head">
-                <h2>My <span>Skills</span></h2>
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <form action="https://formspree.io/f/mbjerjyw" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea><br><br>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
 
-            </div>
-            <div class="skills_main">
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>HTML</p>
-                        <P>92%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="html"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>CSS</p>
-                        <P>90%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="css"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>C#</p>
-                        <P>40%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="csharp"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>JavaScript</p>
-                        <P>20%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="js"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>ASP.Net</p>
-                        <P>30%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="aspnet"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>SQL</p>
-                        <P>70%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="node"></span>
-                    </div>
-                </div>
-                
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>Ionic Framework</p>
-                        <P>80%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="mongo"></span>
-                    </div>
-                </div>
-
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>Angular</p>
-                        <P>80%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="mongo"></span>
-                    </div>
-                </div>
-
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>Java</p>
-                        <P>80%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="mongo"></span>
-                    </div>
-                </div>
-
-                <div class="skill_bar">
-                    <div class="info">
-                        <p>Spring Boot</p>
-                        <P>80%</P>
-                    </div>
-                    <div class="bar">
-                        <span class="mongo"></span>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    </section>
-    <!-- End skills section -->
-
-    <!-- Education section -->
-    <section id="education-section">
-        <div class="edu-containter">
-            <main class="edu-row">
-                <!-- Education section -->
-                <section class="edu-col">
-                    <header class="edu-main-title">
-                    </header>
-                    <div class="edu-contents">
-                        <div class="edu-box">
-                            <h2 class="edu-title">EDUCATION</h2>
-                            <h4>2019- 2022</h4>
-                            <h3>Central University of Technology</h3>
-                            <p>Diploma in Information Technology, Major in Software Development</p>
-                        </div>
-                        <div class="edu-box">
-                            <h4>2016 - 2018</h4>
-                            <h3>Kagisho Comprehensive School</h3>
-                            <p>Science subjects curriculum, <i>maths,physics...etc</i></p>
-                        </div>
-                    </div>
-                </section>
-                <!-- Education section ends -->
-                <!-- Certificates Section -->
-                <section class="edu-col">
-                    <div class="edu-contents">
-                        <div class="edu-box">
-                            <h2 class="edu-title">CERTIFICATES</h2>
-                            <h4>Course Completed on 26 Aug 2022 (1hour:25min)</h4>
-                            <h3>Linkedin Learning</h3>
-                            <p>Programming Foundations: Databases</p>
-                            <p>Fundamentals of SQL and SQL Server Management Studio 2018</p>
-                            <br>
-                            <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin" style="color:darkblue"></i></a></li>
-                        </div>
-                        <div class="edu-box">
-                            <h4>Course Completed on 22 Aug 2022 (2hour:14min)</h4>
-                            <h3>Linkedin Learning</h3>
-                            <p>Programming Foundations: Fundamentals</p>
-                            <p>Fundamentals of the python programming language</p>
-                            <br>
-                            <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin" style="color:darkblue"></i></a></li>
-                        </div>
-
-                    </div>
-                </section>
-                <!-- Certificates section ends -->
-            </main>
-        </div>
-    </section>
-
-    <!-- End Education section -->
-
-    <!-- Projects -->
-    <section id="projects">
-        <!-- <section class="section projects"> -->
-        <div class="heading-title">
-            <h1 class="cert-heading">Projects</h1>
-
-        </div>
-        <div class="projects__grid">
-            <div class="project">
-                <h3><a href="" style="color:#000;">MoneyMate</a></h3>
-                <p class="project__description">
-                    A user-friendly finance management app designed to help individuals and businesses track income, expenses, budgets, and financial goals.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">Ionic Framework</li>
-                    <li class="project__stack-item">Angular</li>
-                    <li class="project__stack-item">Java</li>
-                    <li class="project__stack-item">Spring Boot </li>
-                    <li class="project__stack-item">SQL & MySQL Workbench</li>
-                </ul>
-                <a href="https://github.com/Lungile-Hlakanyane/Front-End-MoneyMate" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000"></i>
-                </a>
-            </div>
-
-            <div class="project">
-                <h3><a href="" style="color:#000;">Smart Student</a></h3>
-                <p class="project__description">
-                    An information hub web application which provides students with services they might need during emergency.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">HTML</li>
-                    <li class="project__stack-item">CSS</li>
-                    <li class="project__stack-item">C#</li>
-                    <li class="project__stack-item">ASP.NET MVC</li>
-                    <li class="project__stack-item">SQL & SQL Server Management Studio 18</li>
-                </ul>
-                <a href="https://drive.google.com/file/d/1LmcfmxWAMqweT3keTf67YBRzWb0BBpXi/view?usp=share_link" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000"></i>
-                </a>
-            </div>
-            <div class="project">
-                <h3>Calculator App</h3>
-                <p class="project__description">
-                    A simple calculator app with the basic mathematical operators. This calculator app has a feature of light mode & dark mode.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">HTML</li>
-                    <li class="project__stack-item">CSS</li>
-                    <li class="project__stack-item">Javascript</li>
-                </ul>
-                <a href="https://github.com/LungileHlakanyane/Calculator-App" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000"></i>
-                </a>
-            </div>
-            <div class="project">
-                <h3>Todo-List App</h3>
-                <p class="project__description">
-                    A Todo List App with very basic features, add, edit and delete a todo. 
-                    This applications uses the local storage to store all the created todo's
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">HTML</li>
-                    <li class="project__stack-item">CSS</li>
-                    <li class="project__stack-item">Javascript</li>
-                </ul>
-                <a href="https://github.com/LungileHlakanyane/todo-list-app" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000;"></i>
-                </a>
-            </div>
-
-            <div class="project">
-                <h3>Task App (Mobile App)</h3>
-                <p class="project__description">
-                    A task app built with Angular/Ionic framework offers users a convenient way to 
-                    manage their tasks, improve productivity, and stay organized in 
-                    their personal or professional lives.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">HTML/Ionic</li>
-                    <li class="project__stack-item">SCSS</li>
-                    <li class="project__stack-item">Typescript</li>
-                    <li class="project__stack-item">Angular</li>
-                </ul>
-                <a href="https://github.com/Lungile-Hlakanyane/taskapp" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000;"></i>
-                </a>
-            </div>
-
-            <div class="project">
-                <h3>Appointment Booking System(Web App)(UI)</h3>
-                <p class="project__description">
-                    A simple and a convenient booking appointment system, that can be used to make appointments.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">HTML/Ionic</li>
-                    <li class="project__stack-item">SCSS</li>
-                    <li class="project__stack-item">Typescript</li>
-                    <li class="project__stack-item">Angular</li>
-                </ul>
-                <a href="https://github.com/Lungile-Hlakanyane/Frontend_Appointment_Booking_System" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000;"></i>
-                </a>
-            </div>
-
-            <div class="project">
-                <h3>Pizzero (Android Mobile App)</h3>
-                <p class="project__description">
-                    A Pizza android app built with Angular/Ionic framework which offers users a convenient way to 
-                    purchase Pizzas online which also offers users ability to live track an order.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">HTML/Ionic</li>
-                    <li class="project__stack-item">SCSS</li>
-                    <li class="project__stack-item">Typescript</li>
-                    <li class="project__stack-item">Angular</li>
-                </ul>
-                <a href="https://github.com/Lungile-Hlakanyane/Pizzero_Front-end" aria-label="source code" class="link link--icon">
-                    <i aria-hidden="true" class="fab fa-github" style="color:#000;"></i>
-                </a>
-            </div>
-
-        </div>
-        <!-- </section> -->
-    </section>
-    <!-- End Projects -->
-
-    <!-- Professional Work Experience -->
-
-    <!-- Education section -->
-    <section id="experience">
-        <div class="edu-containter">
-            <main class="edu-row">
-                <!-- Education section -->
-                <section class="edu-col">
-                    <header class="edu-main-title">
-                    </header>
-                    <div class="edu-contents">
-                        <div class="edu-box">
-                            <h2 class="edu-title">Work Experience</h2>
-                            <h4>June 2023 - June 2024</h4>
-                            <h3>Software Engineer Intern</h3>
-                            <p>@The Innovation Hub Management Company - MICT SETA Internship</p>
-                            <p>Host Company: MFactory</p>
-                           
-                        </div>
-                        <div class="edu-box">
-                            <h4>June 2024 - Current</h4>
-                            <h3>Junior Software Engineer</h3>
-                            <p>@Gwegwe Technologies</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- Education section ends -->
-            </main>
-        </div>
-    </section>
-    <!-- End Education section -->
-
-    <!-- Testimonial Section -->
-    <section id="testimonials">
-        <div class="testimonials">
-            <div class="testi-heading">
-                <h1>Testimonials</h1>
-            </div>
-            <div class="bottom-border"></div>
-            <div class="row">
-                <div class="col">
-                    <div class="testimonial">
-                        <div class="inner">
-                            <img src="images/picture.png">
-                            <h4 class="name">Vuyelwa</h4>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <p>It's very nice.... it seems like there's alot of work done.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testimonial">
-                        <div class="inner">
-                            <img src="images/picture.png">
-                            <h4 class="name">Lufezo</h4>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <p>It looks good mate...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testimonial">
-                        <div class="inner">
-                            <img src="images/picture.png">
-                            <h4 class="name">Kgotso</h4>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <p>It's official I personal think you're a web developer in the making...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testimonial">
-                        <div class="inner">
-                            <img src="images/picture.png">
-                            <h4 class="name">KAT</h4>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <p>Personally I think you're really good and I trust you will be an asset to any company that will hire you...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonial Section -->
-
-    <!-- Contact -->
-    <section class="section contact center" id="contact">
-        <form action="https://formspree.io/f/mbjerjyw" method="POST">
-            <h2 class="section__title">Contact Me</h2>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="text" id="email" placeholder="Your Email" required>
-            <textarea name="Your Message" id="message" rows="4"></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-    <!-- End Contact -->
-
-    <!-- Footer -->
-    <section id="footer">
-        <footer>
-            <div class="footer-content">
-                <h3>Lungile Hlakanyane</h3>
-                <p>Full-Stack Software Developer</p>
-                <ul class="socials">
-                    <li><a href="https://github.com/LungileHlakanyane"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="footer-bottom">
-                <p>copyright &copy; LUNGILE-HLAKANYANE. designed and developed by <span>Lungile Hlakanyane</span></p>
-            </div>
-        </footer>
-    </section>
-    <!-- End Footer -->
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <!-- End Scripts -->
+  <footer>
+    <h3>Lungile Hlakanyane</h3>
+    <p>Full-Stack Software Developer</p>
+    <div class="socials">
+      <a href="https://github.com/LungileHlakanyane"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/lungile-hlakanyane/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p style="margin-top: 10px">&copy; 2025 Lungile Hlakanyane</p>
+  </footer>
 </body>
 
 </html>
